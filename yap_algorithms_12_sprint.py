@@ -76,8 +76,46 @@
 # 	print_list(solution(node_prev, index_to_delete))
 # endregion
 
-# region D.
+# region D. Заботливая мама
+# LOCAL = True
 
+
+# if LOCAL:
+# 	class Node:  
+# 		def __init__(self, value, next_item=None):
+# 			self.value = value
+# 			self.next_item = next_item
+
+
+# def read_input():
+# 	count = int(input())
+# 	input_array = [input() for _ in range(count)]
+# 	element = input()
+# 	return input_array, element
+
+
+# def solution(node, elem):
+# 	index = 0
+# 	current = node
+# 	while current is not None:
+# 		if current.value == elem:
+# 			return index
+# 		current = current.next_item
+# 		index += 1
+# 	return -1
+
+
+# def test():
+# 	arr, element = read_input()
+# 	node_next = None
+# 	for val in arr:
+# 		node_prev = Node(val, node_next)
+# 		node_next = node_prev
+# 	print(solution(node_prev, element))
+
+
+# if __name__ == '__main__':
+# 	test()
 # endregion
 
 
