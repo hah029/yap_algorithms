@@ -81,7 +81,7 @@
 
 
 # if LOCAL:
-# 	class Node:  
+# 	class Node:
 # 		def __init__(self, value, next_item=None):
 # 			self.value = value
 # 			self.next_item = next_item
@@ -118,7 +118,68 @@
 # 	test()
 # endregion
 
+# region E. Всё наоборот
+# LOCAL = True
+# if LOCAL:
+#     class DoubleConnectedNode:  
+#         def __init__(self, value, next=None, prev=None):
+#             self.value = value
+#             self.next = next
+#             self.prev = prev
 
+# def solution(node):
+#     temp = None
+#     current = node
+#     while current:
+#         temp = current.prev
+#         current.prev = current.next
+#         current.next = temp
+#         current = current.prev
+
+#     if temp:
+#         node = temp.prev
+#     return node
+
+# def read_input():
+# 	count = int(input())
+# 	input_array = [input() for _ in range(count)]
+# 	return input_array
+
+
+# def print_list(node):
+# 	while node:
+# 		print(node.value)
+# 		node = node.next
+
+# def two_direction_list_generate(arr):
+# 	temp_node_list = []
+
+# 	for value in arr:
+# 		node = DoubleConnectedNode(value, None, None)
+# 		temp_node_list.append(node)
+
+# 	for index, current in enumerate(temp_node_list):
+# 		if index == 0:
+# 			current.prev = None
+# 		else:
+# 			current.prev = temp_node_list[index - 1]
+
+# 		if index == (len(temp_node_list) - 1):
+# 			current.next = None
+# 		else:
+# 			current.next = temp_node_list[index + 1]
+
+# 	return temp_node_list[0]
+
+# def test():
+# 	input_array = read_input()
+# 	node = two_direction_list_generate(input_array)
+# 	new_head = solution(node)
+# 	print_list(new_head)
+
+# if __name__ == '__main__':
+#     test()
+# endregion
 
 # endregion
 # ===============================================================================================
