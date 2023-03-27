@@ -181,6 +181,50 @@
 #     test()
 # endregion
 
+# region F. Стек - Max
+# class StackMax:
+#     def __init__(self):
+#         self.items = []
+
+#     def push(self, value):
+#         self.items.append(value)
+
+#     def pop(self):
+#         if len(self.items) == 0:
+#             print('error')
+#             return
+#         return self.items.pop()
+
+#     def get_max(self):
+#         if len(self.items) == 0:
+#             return None
+#         return max(self.items)
+
+
+# def read_input():
+#     count = int(input())
+#     input_array = [input().split() for _ in range(count)]
+#     return input_array
+
+
+# def test():
+#     input_array = read_input()
+#     stack = StackMax()
+
+#     for item in input_array:
+#         if item[0] == 'push':
+#             stack.push(int(item[1]))
+#         elif item[0] == 'pop':
+#             stack.pop()
+#         elif item[0] == 'get_max':
+#             print(stack.get_max())
+
+
+# if __name__ == '__main__':
+#     test()
+# endregion
+
+
 # endregion
 # ===============================================================================================
 
