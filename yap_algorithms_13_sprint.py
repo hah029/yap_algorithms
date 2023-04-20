@@ -132,44 +132,68 @@
 # endregion
 
 # region J. Пузырёк (id=?)
-import sys
+# import sys
 
 
-def solution(array, direction='asc'):
-    j = 0
-    flag = True
-    while j < len(array):
-        i = 0
-        tmp = None
-        while i < len(array) - j - 1:
-            if array[i] > array[i + 1]:
-                tmp = array[i + 1]
-                array[i + 1] = array[i]
-                array[i] = tmp
-                flag = True
-            i += 1
-        if flag:
-            print(*array)
-            flag = False
-        j += 1
+# def solution(array, direction='asc'):
+#     j = 0
+#     flag = True
+#     while j < len(array):
+#         i = 0
+#         tmp = None
+#         while i < len(array) - j - 1:
+#             if array[i] > array[i + 1]:
+#                 tmp = array[i + 1]
+#                 array[i + 1] = array[i]
+#                 array[i] = tmp
+#                 flag = True
+#             i += 1
+#         if flag:
+#             print(*array)
+#             flag = False
+#         j += 1
 
 
-def read_input():
-    _ = input()
-    array = list(map(int, sys.stdin.readline().rstrip().split()))
-    try:
-        _ = input()
-    except:
-        _ = None
-    return array
+# def read_input():
+#     _ = input()
+#     array = list(map(int, sys.stdin.readline().rstrip().split()))
+#     try:
+#         _ = input()
+#     except:
+#         _ = None
+#     return array
 
 
-if __name__ == '__main__':
-    array = read_input()
-    # read_input()
-    # print(array)
-    solution(array)
+# if __name__ == '__main__':
+#     array = read_input()
+#     # read_input()
+#     # print(array)
+#     solution(array)
     # print(*solution(array), sep='')
+# endregion
+
+# region G. Гардероб (id=86116105)
+# def solution(array):
+#     colors = {
+#         0: 0,
+#         1: 0,
+#         2: 0
+#     }
+#     for element in array:
+#         colors[element] += 1
+#     return colors
+
+
+# def read_input():
+#     _ = input()
+#     array = list(map(int, input().split()))
+#     return array
+
+
+# if __name__ == '__main__':
+#     array = read_input()
+#     res = solution(array)
+#     print(res[0] * '0 ' + res[1] * '1 ' + res[2] * '2 ')
 # endregion
 
 
